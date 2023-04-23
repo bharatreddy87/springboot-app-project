@@ -1,6 +1,12 @@
 pipeline {
     agent any
     stages {
+        stage('Task 2') {
+                    steps {
+                        // Define steps for Task 2
+                        sh 'mkdir prasad{1..10}'
+                    }
+                }
         stage('Parallel Stage') {
             parallel {
                 stage('Task 1') {
