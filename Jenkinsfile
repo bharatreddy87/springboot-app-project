@@ -9,9 +9,9 @@ pipeline{
             when {
                 expression {
                     if (tf_version=="Terraform") {
-                        return true
-                    } else {
                         return false
+                    } else {
+                        return true
                     }
                 }
             }
