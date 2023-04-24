@@ -9,9 +9,9 @@ pipeline{
             when {
                 expression {
                     if (aws_version=="aws-cli") {
-                        return false
-                    } else {
                         return true
+                    } else {
+                        return false
                     }
                 }
             }
